@@ -11,7 +11,6 @@ namespace GraficPrimitive
         {
             InitializeComponent();
         }
-
         private void HorizontalLineBtn(object sender, EventArgs e)
         {
             for (int i = 0, j = 300; i < 300; i++, j++)
@@ -22,28 +21,24 @@ namespace GraficPrimitive
             }
             pictureBox1.Image = bitmap;
         }
-
         private void VerticalLineBtn(object sender, EventArgs e)
         {
             for (int i = 0; i < 400; i++)
                 bitmap.SetPixel(200, i, Color.Red);
             pictureBox1.Image = bitmap;
         }
-
         private void RightDiagonalBtn(object sender, EventArgs e)
         {
             for (int i = 0, j = 399; j > 1; i++, j--)
                 bitmap.SetPixel(j, i, Color.Yellow);
             pictureBox1.Image = bitmap;
         }
-
         private void LeftDiagonalBtn(object sender, EventArgs e)
         {
             for (int i = 399; i > 1; i--)
                 bitmap.SetPixel(i, i, Color.Brown);
             pictureBox1.Image = bitmap;
         }
-
         private void ZvNeboBtn(object sender, EventArgs e)
         {
             Random r = new Random();
